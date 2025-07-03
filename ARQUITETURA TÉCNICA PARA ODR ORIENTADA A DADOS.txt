@@ -1,0 +1,33 @@
+┌───────────────────────────────┐
+│ Interface Web e Mobile (UI)  │
+└───────────────────────────────┘
+             │
+             ▼
+┌───────────────────────────────┐
+│ Camada de APIs e Autenticação│
+└───────────────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────────────────────────┐
+│                BACKEND DE LÓGICA ODR                   │
+│ Negociação, Mediação, Workflow, Regras Jurídicas      │
+└────────────────────────────────────────────────────────┘
+             │
+             ▼
+┌───────────────────────────────┬───────────────────────────────┐
+│ Banco de Dados Operacional    │ Banco de Documentos / Anexos  │
+│ (PostgreSQL, MongoDB)         │ (S3, MinIO, Azure Blob)       │
+└───────────────────────────────┴───────────────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────────────────────────┐
+│           CAMADA DE DATA LAKE / WAREHOUSE              │
+│ (Delta Lake, BigQuery, Snowflake, Redshift, etc.)      │
+└────────────────────────────────────────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────────────────────────┐
+│               CAMADA DE DATA SCIENCE                   │
+│ Modelos Preditivos, Recomendação, Fairness Monitor     │
+│ NLP Jurídico, Dashboards, Monitoramento de KPIs        │
+└────────────────────────────────────────────────────────┘
