@@ -31,3 +31,23 @@
 │ Modelos Preditivos, Recomendação, Fairness Monitor     │
 │ NLP Jurídico, Dashboards, Monitoramento de KPIs        │
 └────────────────────────────────────────────────────────┘
+
+Etapa 2 – Pipeline de Curadoria de Dados
+
+1. Coleta
+   - Baixar CSVs mensais do Consumidor.gov.br
+   - Unificar os arquivos por ano
+2. Limpeza
+   - Remover registros incompletos ou nulos
+   - Padronizar campos de texto e categorias
+3. Enriquecimento
+   - NLP: sentimento da reclamação, complexidade léxica
+   - Classificação automática do tipo de conflito
+4. Engenharia de atributos
+   - Tempo de resposta, satisfação média, reincidência
+   - Número de mensagens trocadas (se disponível)
+5. Modelagem
+   - Aplicar pipeline de ML já existente
+   - Ajustar para múltiplos tipos de desfecho (multi-classe, se necessário)
+6. Fairness
+   - Aplicar AIF360 por setor, localização, tempo de resposta
